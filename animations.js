@@ -13,8 +13,8 @@ $(document).ready(function(){
   // STEP 3 & 4
   maxCharacters = 140;
   $('#char-count').text(maxCharacters);
-  $('textarea').bind('keyup keydown', function(){
-    var characters = $('textarea').val().length;
+  $('.tweet-compose').bind('keyup keydown', function(){
+    var characters = $('.tweet-compose').val().length;
     if (characters >= (maxCharacters - 10)) {
       $('#char-count').css('color', 'red');
     } else {
